@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CSS</title>
+    <style>
+        .styled {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos magnam explicabo quas, fugit suscipit laudantium qui beatae exercitationem maiores quis illum placeat.</p>
+    <button id="applyStyle">Apply Style</button>
+
+    <script>
+        document.getElementById("applyStyle").addEventListener("click", function () {
+            document.getElementById("text").classList.toggle("styled");
+        });
+    </script>
+
+</body>
+</html>

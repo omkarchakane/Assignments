@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Paragraph</title>
+</head>
+<body>
+
+    <button id="togglePara">Show/Hide Paragraph</button>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellat!</p>
+
+    <script>
+        document.getElementById("togglePara").addEventListener("click", function () {
+            let para = document.getElementById("paragraph");
+            para.style.display = (para.style.display === "none") ? "block" : "none";
+        });
+    </script>
+
+</body>
+</html>

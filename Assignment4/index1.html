@@ -1,0 +1,33 @@
+<!--  Dark Theme Toggle -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Toggle</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleTheme">Click To Change Theme</button>
+
+    <script>
+        document.getElementById("toggleTheme").addEventListener("click", function () {
+            document.body.classList.toggle("dark-theme");
+        });
+    </script>
+
+</body>
+</html>

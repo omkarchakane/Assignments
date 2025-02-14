@@ -1,0 +1,32 @@
+<!-- Dynamic Div Creation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Div Creation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 234, 0);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="createDiv">Create Div</button>
+    <div id="container"></div>
+
+    <script>
+        document.getElementById("createDiv").addEventListener("click", function () {
+            let newDiv = document.createElement("div");
+            newDiv.className = "box";
+            document.getElementById("container").appendChild(newDiv);
+        });
+    </script>
+
+</body>
+</html>
